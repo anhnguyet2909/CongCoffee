@@ -1,15 +1,28 @@
-package com.example.coffee;
+package Object;
 
 public class User {
-    int id;
-    String name, pass, phone, image;
+    String id;
+    String name, username, pass, phone, image;
     int role;
 
-    public int getId() {
+    public User() {
+    }
+
+    public User(String id, String name, String username, String pass, String phone, String image, int role) {
+        this.id = id;
+        this.name = name;
+        this.username = username;
+        this.pass = pass;
+        this.phone = phone;
+        this.image = image;
+        this.role = role;
+    }
+
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -19,6 +32,14 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPass() {
@@ -50,15 +71,6 @@ public class User {
     }
 
     public void setRole(int role) {
-        this.role = role;
-    }
-
-    public User(int id, String name, String pass, String phone, String image, int role) {
-        this.id = id;
-        this.name = name;
-        this.pass = pass;
-        this.phone = phone;
-        this.image = image;
         this.role = role;
     }
 }

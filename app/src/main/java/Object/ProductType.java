@@ -1,4 +1,4 @@
-package com.example.coffee;
+package Object;
 
 public class ProductType {
     int id;
